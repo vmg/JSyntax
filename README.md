@@ -1,5 +1,5 @@
-J
-=
+JSyntax
+=======
 
 Syntax highlighting for J.
 
@@ -18,7 +18,7 @@ Contains:
 Install
 -------
 
-add file to `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/`
+add file to `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/` or install through Package control.
 
 LICENSE
 -------
