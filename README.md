@@ -15,6 +15,11 @@ Contains:
     adverb.j (matches all adverbs)
     verb.j (matches all verbs)
 
+Install
+-------
+
+add file to `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/`
+
 LICENSE
 -------
 
