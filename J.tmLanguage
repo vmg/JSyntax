@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>fileTypes</key>
+    <array>
+        <string>ijs</string>
+    </array>
+
+<!--     <key>firstLineMatch</key>
+    <string>^#!.*\bjc\s*$</string> -->
+
+    <key>name</key>
+    <string>J</string>
+
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>name</key>
+            <string>string.j</string>
+
+            <key>match</key>
+            <string>('[^']*')</string>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>constant.numeric.j</string>
+
+            <key>match</key>
+            <string>(_?\d*\.?\d+)</string>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>comment.j</string>
+
+            <key>match</key>
+            <string>(?:^|[ )])(NB\..*$)</string>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>copula.global.j</string>
+
+            <key>match</key>
+            <string>=\:</string>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>copula.local.j</string>
+
+            <key>match</key>
+            <string>=\.</string>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>keyword.j</string>
+
+            <key>match</key>
+            <string>(?:^|(?&lt;=[) ]))((?:while\.)|(?:whilst\.)|(?:if\.)|(?:elseif\.)|(?:else\.)|(?:do\.)|(?:end\.))</string>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>noun.j</string>
+
+            <key>match</key>
+            <string>(?:_(?=[^\d:]))|(?:a[.:])</string>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>conjunction.j</string>
+
+            <key>match</key>
+            <string>(?:\^\:)|(?:[.:`@][.:]?)|(?:;\.)|(?:![.:])|(?:["](?![.:]))|(?:\&\.?\:?)|(?:[dHT]\.)|(?:D[.:])|(?:[LS]\:)</string>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>adverb.j</string>
+
+            <key>match</key>
+            <string>(?:[~}](?![.:]))|(?:[/\\]\.?)|(?:[bfM]\.)|(?:t[.:])</string>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>verb.j</string>
+
+            <key>match</key>
+            <string>(?:[=!](?![.:]))|(?:[&lt;&gt;+*%$|,#{-][.:]?)|(?:_\:)|(?:\^\.?)|(?:\^\!\.)|(?:[~}"ip][.:])|(?:[;\[]\:?)|(?:[/\\]\:)|\]|(?:\{\:\:)|(?:\?\.?)|(?:[AeEIjLr]\.)|(?:p\.\.)|(?:[qsux0]\:)|(?:_?[1-9]\s?\:)</string>
+        </dict>
+    </array>
+
+    <key>scopeName</key>
+    <string>source.j</string>
+</dict>
+</plist>
