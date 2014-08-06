@@ -7,9 +7,6 @@
         <string>ijs</string>
     </array>
 
-<!--     <key>firstLineMatch</key>
-    <string>^#!.*\bjc\s*$</string> -->
-
     <key>name</key>
     <string>J</string>
 
